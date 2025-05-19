@@ -20,7 +20,196 @@
 
 <form action="https://your-backend-url.com/submit" method="POST" enctype="multipart/form-data">
 
-  <!-- Example fields; continue adding others as needed -->
+  <label for="request_by">Request made by:</label>
+  <input type="text" id="request_by" name="request_by" required />
+
+  <label>Company:</label>
+  <div class="checkbox-group">
+    <label><input type="checkbox" name="company" value="Company A" /> Company A</label>
+    <label><input type="checkbox" name="company" value="Company B" /> Company B</label>
+    <label><input type="checkbox" name="company" value="Company C" /> Company C</label>
+  </div>
+
+  <label>Supplier Legal Personality:</label>
+  <select name="supplier_legal_personality" required>
+    <option value="">--Select--</option>
+    <option value="LLC">LLC</option>
+    <option value="Corporation">Corporation</option>
+    <option value="Sole Proprietorship">Sole Proprietorship</option>
+  </select>
+
+  <label>Vendor created by dentsu:</label>
+  <select name="vendor_created_by_dentsu" required>
+    <option value="">--Select--</option>
+    <option value="Yes">Yes</option>
+    <option value="No">No</option>
+  </select>
+
+  <label for="supplier_company_name">Supplier Company Name:</label>
+  <input type="text" id="supplier_company_name" name="supplier_company_name" required />
+
+  <label>Group (D365):</label>
+  <select name="group_d365" required>
+    <option value="">--Select--</option>
+    <option value="Group 1">Group 1</option>
+    <option value="Group 2">Group 2</option>
+    <option value="Group 3">Group 3</option>
+  </select>
+
+  <label>Influencer (D365) promoter:</label>
+  <select name="influencer_d365" required>
+    <option value="">--Select--</option>
+    <option value="Promoter A">Promoter A</option>
+    <option value="Promoter B">Promoter B</option>
+  </select>
+
+  <label for="vendor_website">Vendor Web Site:</label>
+  <input type="text" id="vendor_website" name="vendor_website" />
+
+  <label for="inactive_bpc_entity">Inactive BPC entity (email):</label>
+  <input type="email" id="inactive_bpc_entity" name="inactive_bpc_entity" />
+
+  <label>Media Vehicle (indicate the name of the vehicle):</label>
+  <div class="checkbox-group">
+    <label><input type="checkbox" name="media_vehicle" value="Vehicle A" /> Vehicle A</label>
+    <label><input type="checkbox" name="media_vehicle" value="Vehicle B" /> Vehicle B</label>
+    <label><input type="checkbox" name="media_vehicle" value="Vehicle C" /> Vehicle C</label>
+  </div>
+
+  <label for="address">Address:</label>
+  <input type="text" id="address" name="address" />
+
+  <label for="n">N:</label>
+  <input type="text" id="n" name="n" />
+
+  <label for="postal_code">Postal Code:</label>
+  <input type="text" id="postal_code" name="postal_code" />
+
+  <label>Country:</label>
+  <select name="country" required>
+    <option value="">--Select--</option>
+    <option value="Country A">Country A</option>
+    <option value="Country B">Country B</option>
+  </select>
+
+  <label>City:</label>
+  <select name="city" required>
+    <option value="">--Select--</option>
+    <option value="City X">City X</option>
+    <option value="City Y">City Y</option>
+  </select>
+
+  <label for="telephone_number">Telephone Number:</label>
+  <input type="text" id="telephone_number" name="telephone_number" />
+
+  <label>VAT Group:</label>
+  <select name="vat_group" required>
+    <option value="">--Select--</option>
+    <option value="Group 1">Group 1</option>
+    <option value="Group 2">Group 2</option>
+  </select>
+
+  <label for="dentsu_contact_email">dentsu Contact Email Address:</label>
+  <input type="email" id="dentsu_contact_email" name="dentsu_contact_email" />
+
+  <label for="vendor_email">Email del fornitore / Vendor’s email address:</label>
+  <input type="email" id="vendor_email" name="vendor_email" />
+
+  <label>Professional:</label>
+  <select name="professional" required>
+    <option value="">--Select--</option>
+    <option value="Yes">Yes</option>
+    <option value="No">No</option>
+  </select>
+
+  <label>Withholding tax:</label>
+  <select name="withholding_tax" required>
+    <option value="">--Select--</option>
+    <option value="Yes">Yes</option>
+    <option value="No">No</option>
+  </select>
+
+  <label for="first_name">First Name:</label>
+  <input type="text" id="first_name" name="first_name" />
+
+  <label for="last_name">Last Name:</label>
+  <input type="text" id="last_name" name="last_name" />
+
+  <label for="birth_place">Birth Place:</label>
+  <input type="text" id="birth_place" name="birth_place" />
+
+  <label>Birth County:</label>
+  <select name="birth_county" required>
+    <option value="">--Select--</option>
+    <option value="County A">County A</option>
+    <option value="County B">County B</option>
+  </select>
+
+  <label for="birth_date">Birth Date:</label>
+  <input type="date" id="birth_date" name="birth_date" />
+
+  <label>Gender:</label>
+  <select name="gender" required>
+    <option value="">--Select--</option>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    <option value="Other">Other</option>
+  </select>
+
+  <label for="pec">PEC (email):</label>
+  <input type="email" id="pec" name="pec" />
+
+  <label for="supplier_vat_number">Supplier VAT Number:</label>
+  <input type="text" id="supplier_vat_number" name="supplier_vat_number" />
+
+  <label for="supplier_fiscal_code">Supplier Fiscal Code Number:</label>
+  <input type="text" id="supplier_fiscal_code" name="supplier_fiscal_code" />
+
+  <label for="treatment_type_vat">Treatment type VAT / Jurisprudence:</label>
+  <input type="text" id="treatment_type_vat" name="treatment_type_vat" />
+
+  <label for="business_register_number">Number of inscription in the Business Register (CCIAA):</label>
+  <input type="text" id="business_register_number" name="business_register_number" />
+
+  <label>Attachment Chambre of commerce certification:</label>
+  <input type="file" name="attachment_chamber_of_commerce" />
+
+  <label>Attachment fiscal code:</label>
+  <input type="file" name="attachment_fiscal_code" />
+
+  <label>Attachment Identity card:</label>
+  <input type="file" name="attachment_identity_card" />
+
+  <label>Payment Term (Days):</label>
+  <select name="payment_term_days" required>
+    <option value="">--Select--</option>
+    <option value="15">15</option>
+    <option value="30">30</option>
+    <option value="60">60</option>
+  </select>
+
+  <label>Payment Method:</label>
+  <select name="payment_method" required>
+    <option value="">--Select--</option>
+    <option value="Wire Transfer">Wire Transfer</option>
+    <option value="Check">Check</option>
+  </select>
+
+  <label>Payment Terms Attachments:</label>
+  <input type="file" name="payment_terms_attachments" />
+
+  <label for="bank_name">Bank Name:</label>
+  <input type="text" id="bank_name" name="bank_name" />
+
+  <label for="bank_address">Bank Address:</label>
+  <input type="text" id="bank_address" name="bank_address" />
+
+  <label for="account_holder">Account Holder:</label>
+  <input type="text" id="account_holder" name="account_holder" />
+
+  <label for="account_number">Account Number:</label>
+  <input type="text" id="account_number" name="account_number" />
+
   <label>Currency:</label>
   <select name="currency" required>
     <option value="">--Select--</option>
