@@ -9,7 +9,13 @@
   label { font-weight: bold; display: block; margin-top: 15px; }
   input, select, textarea { width: 100%; padding: 6px; margin-top: 5px; }
   .checkbox-group, .multiple-choice { margin-top: 5px; }
-  .checkbox-group label, .multiple-choice label { font-weight: normal; display: inline-block; margin-right: 15px; }
+  .checkbox-group label, .multiple-choice label {
+    font-weight: normal; display: inline-flex; align-items: center; margin-right: 15px;
+  }
+  .checkbox-group label input, .multiple-choice label input {
+    margin-right: 5px;
+    order: -1;
+  }
   .attachments input { margin-top: 10px; }
   button { margin-top: 20px; padding: 10px 15px; font-size: 16px; }
 </style>
@@ -21,11 +27,11 @@
 <form action="https://your-backend-url.com/submit" method="POST" enctype="multipart/form-data">
 
   <label for="request_by">Request made by:</label>
-  <input type="text" id="request_by" name="request_by" required />
+  <input type="email" id="request_by" name="request_by" required />
 
   <label>Company:</label>
   <div class="checkbox-group">
-<label><input type="checkbox" name="company" value="DENTSU ITALIA SPA" /> DENTSU ITALIA SPA</label>
+    <label><input type="checkbox" name="company" value="DENTSU ITALIA SPA" /> DENTSU ITALIA SPA</label>
     <label><input type="checkbox" name="company" value="CARAT ITALIA SPA" /> CARAT ITALIA SPA</label>
     <label><input type="checkbox" name="company" value="iPROSPECT ITALIA SPA" /> iPROSPECT ITALIA SPA</label>
     <label><input type="checkbox" name="company" value="DENTSU DIGITAL SRL" /> DENTSU DIGITAL SRL</label>
