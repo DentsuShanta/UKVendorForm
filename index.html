@@ -40,10 +40,9 @@
 
   <label>Supplier Legal Personality:</label>
   <select name="supplier_legal_personality" required>
-    <option value="">--Select--</option>
-    <option value="LLC">LLC</option>
-    <option value="Corporation">Corporation</option>
-    <option value="Sole Proprietorship">Sole Proprietorship</option>
+<option value="">--Select--</option>
+    <option value="Natural Person">Natural Person</option>
+    <option value="Legal Person">Legal Person</option>
   </select>
 
   <label>Vendor created by dentsu:</label>
@@ -58,17 +57,18 @@
 
   <label>Group (D365):</label>
   <select name="group_d365" required>
-    <option value="">--Select--</option>
-    <option value="Group 1">Group 1</option>
-    <option value="Group 2">Group 2</option>
-    <option value="Group 3">Group 3</option>
+<option value="">--Select--</option>
+    <option value="MEDIA">MEDIA</option>
+    <option value="NONMEDIA">NONMEDIA</option>
+    <option value="HOUSE">HOUSE</option>
+    <option value="INTCO">INTCO</option>
   </select>
 
   <label>Influencer (D365) promoter:</label>
   <select name="influencer_d365" required>
     <option value="">--Select--</option>
-    <option value="Promoter A">Promoter A</option>
-    <option value="Promoter B">Promoter B</option>
+    <option value="Nessuno / None">Nessuno / None</option>
+    <option value="Influencer">Influencer</option>
   </select>
 
   <label for="vendor_website">Vendor Web Site:</label>
@@ -79,9 +79,14 @@
 
   <label>Media Vehicle (indicate the name of the vehicle):</label>
   <div class="checkbox-group">
-    <label><input type="checkbox" name="media_vehicle" value="Vehicle A" /> Vehicle A</label>
-    <label><input type="checkbox" name="media_vehicle" value="Vehicle B" /> Vehicle B</label>
-    <label><input type="checkbox" name="media_vehicle" value="Vehicle C" /> Vehicle C</label>
+    <label><input type="checkbox" name="media_vehicle" value="INTERNET" /> INTERNET</label>
+    <label><input type="checkbox" name="media_vehicle" value="STAMPA" />INTERNET STAMPA</label>
+    <label><input type="checkbox" name="media_vehicle" value="STAMPA TV" />STAMPA TV</label>
+    <label><input type="checkbox" name="media_vehicle" value="TV OOH" />TV OOH</label>
+    <label><input type="checkbox" name="media_vehicle" value="OOH MEZZI DIVERSI" />OOH MEZZI DIVERSI</label>
+    <label><input type="checkbox" name="media_vehicle" value="MEZZI DIVERSI  DIGITAL" />MEZZI DIVERSI  DIGITAL</label>
+    <label><input type="checkbox" name="media_vehicle" value="DIGITAL RADIO" />DIGITAL RADIO</label>
+    <label><input type="checkbox" name="media_vehicle" value="RADIO" />RADIO</label>
   </div>
 
   <label for="address">Address:</label>
